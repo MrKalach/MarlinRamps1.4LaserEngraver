@@ -736,7 +736,7 @@
     #else
 
       // Beeper on AUX-4
-      #define BEEPER_PIN             EXP2_06_PIN
+      #define BEEPER_PIN             EXP1_10_PIN
 
       // Buttons are directly attached to AUX-2
       #if ENABLED(PANEL_ONE)
@@ -744,10 +744,19 @@
         #define BTN_EN2                       63  // AUX2 PIN 4
         #define BTN_ENC              EXP2_04_PIN
       #else
-        #define BTN_EN1              EXP1_10_PIN
-        #define BTN_EN2              EXP1_09_PIN
-        #define BTN_ENC              EXP2_08_PIN
+        #define BTN_ENC              EXP1_09_PIN
+        #define BTN_EN1              EXP2_08_PIN
+        #define BTN_EN2              EXP2_06_PIN
       #endif
+
+      #define SD_DETECT_PIN          EXP2_04_PIN
+
+      #define SD_SCK_PIN             52
+      #define SD_MISO_PIN            50
+      #define SD_MOSI_PIN            51
+      #define SD_SS_PIN              53
+
+      #define KILL_PIN               EXP2_03_PIN
 
       #if ENABLED(G3D_PANEL)
         #define SD_DETECT_PIN        EXP2_04_PIN
