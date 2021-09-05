@@ -751,10 +751,10 @@
 
       #define SD_DETECT_PIN          EXP2_04_PIN
 
-      #define SD_SCK_PIN             52
-      #define SD_MISO_PIN            50
-      #define SD_MOSI_PIN            51
-      #define SD_SS_PIN              53
+      #define SD_SCK_PIN             EXP2_09_PIN
+      #define SD_MISO_PIN            EXP2_10_PIN
+      #define SD_MOSI_PIN            EXP2_05_PIN
+      #define SD_SS_PIN              EXP2_07_PIN
 
       #define KILL_PIN               EXP2_03_PIN
 
