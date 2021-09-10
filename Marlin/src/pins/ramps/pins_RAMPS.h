@@ -763,6 +763,12 @@
         #define KILL_PIN             EXP2_03_PIN
       #endif
 
+      #if ENABLED(Y_HOME_TO_MIN)
+        #undef Y_HOME_TO_MIN
+        #define Y_HOME_TO_MIN 0
+      #endif
+      #define Y_HOME_TO_MAX 1
+
     #endif
   #endif // IS_NEWPANEL
 
